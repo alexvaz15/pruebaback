@@ -20,8 +20,8 @@ from django.contrib.auth.models import User
 from rest_framework import routers, serializers, viewsets
 from rest_framework import permissions
 # from rest_framework_swagger.views import get_swagger_view
-from drf_yasg.views import get_schema_view
-from drf_yasg import openapi
+# from drf_yasg.views import get_schema_view
+# from drf_yasg import openapi
 
 
 
@@ -60,4 +60,5 @@ urlpatterns = [
     # path(r'^redoc/$', schema_view.with_ui('redoc', cache_timeout=0), name='schema-redoc'),
     re_path(r'^', include(router.urls)),
     re_path(r'^api/v1/login/', include('Login.urls')),
+    re_path(r'^api/v1/profile/', include('Profile.urls')),
 ]
