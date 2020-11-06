@@ -25,7 +25,7 @@ SECRET_KEY = '^r=o&58_*rd24oh#ivny-k&7x(^6!ydr=o^oi+x3%4&c=l*v1$'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['backidswww.herokuapp.com']
 
 
 # Application definition
@@ -111,18 +111,29 @@ WSGI_APPLICATION = 'TrayectoriaBack.wsgi.application'
 #     }
 # }
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql_psycopg2',
+#         'NAME':'trayectoriadatabase',
+#         'USER': 'postgres',
+#         'PASSWORD':'03041981', 
+#         'HOST':'127.0.0.1',
+#         'PORT': '5432'
+
+#     }
+# }
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME':'trayectoriadatabase',
-        'USER': 'postgres',
-        'PASSWORD':'03041981', 
-        'HOST':'127.0.0.1',
+        'NAME':'dc88tqslrirjim',
+        'USER': 'ytryzugbghhzkb',
+        'PASSWORD':'3d41efb968b0f91a22753f9c32c71c4a4a5370bc225b65c75f3c12f84f6ac823', 
+        'HOST':'ec2-52-203-165-126.compute-1.amazonaws.com',
         'PORT': '5432'
 
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/3.1/ref/settings/#auth-password-validators
