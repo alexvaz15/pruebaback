@@ -8,14 +8,14 @@ from rest_framework.views import APIView
 # MODELOS
 from Profile.models import ProfileModel
 #Serializers
-from Profile.serializers import ProfileSerialiezers
+from Profile.serializers import  ProfileSerialiezers
 # -------------------VIEWS-----------------
 class ProfileModelView(APIView):
 
     def post(self, request, format=None):
-        serializer = ProfileModelSerializers(data = request.data, context = {'request': request}) # Va a invocar a una clase de serializador
+        serializer = ProfileSerialiezers(data = request.data, context = {'request': request}) # Va a invocar a una clase de serializador
         if(serializer.is_valid()):
             serializer.save()
             return Response(serializer.data)
         # response = ResponseJson("Error")
-        return Response("Error Formato")
+        return Response(serializer.errors)
