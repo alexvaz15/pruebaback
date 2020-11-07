@@ -18,4 +18,4 @@ class ProfileModelView(APIView):
             serializer.save()
             return Response(serializer.data)
         # response = ResponseJson("Error")
-        return Response(serializer.errors)
+        return Response("Error Formato")
