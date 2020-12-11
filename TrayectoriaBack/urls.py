@@ -62,5 +62,6 @@ urlpatterns = [
     re_path(r'^api/v1/login/', include('Login.urls')),
     re_path(r'^api/v1/profile/', include('Profile.urls')),
     re_path(r'^api/v1/datos/', include('Datos.urls')),
+    re_path(r'^api/v1/auth_user/', include('auth_user.urls')),
 
 ]

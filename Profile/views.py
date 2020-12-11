@@ -13,7 +13,7 @@ from Profile.serializers import ProfileSerialiezers
 class ProfileModelView(APIView):
 
     def post(self, request, format=None):
-        serializer = ProfileSerialiezers(data = request.data, context = {'request': request}) # Va a invocar a una clase de serializador
+        serializer = ProfileSerialiezers(data = request.data, context = {'request': request}) 
         if(serializer.is_valid()):
             serializer.save()
             return Response(serializer.data)
