@@ -106,7 +106,7 @@ DATABASES = {
         'NAME':'webdb',
         'USER': 'webuserdb',
         'PASSWORD':'web141189', 
-        'HOST':'localhost',#ip public
+        'HOST':'localhost',
         'PORT': '5432'
 
     }
