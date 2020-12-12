@@ -22,7 +22,7 @@ SECRET_KEY =config ('SECRET_KEY')
 
 DEBUG = config('DEBUG', default=False, cast=bool)
 
-ALLOWED_HOSTS = ['backidswww.herokuapp.com']
+ALLOWED_HOSTS = ['backidswww.herokuapp.com', '34.227.83.246']
 
 
 # Application definition
